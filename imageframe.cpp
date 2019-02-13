@@ -129,7 +129,7 @@ void ImageFrame::processPicture() {
 
 void ImageFrame::savePicture() {
     qDebug() << "save connect";
-    QString filter = "png(*png);;jpg(*jpg);;bmp(*bmp)";
+    QString filter = "png(*.png);;jpg(*.jpg);;bmp(*.bmp)";
     QString fileName = QFileDialog::getSaveFileName(this,
                                                     tr("Save Image"), ".",
                                                     filter);
